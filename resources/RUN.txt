@@ -1,3 +1,1 @@
-// TODO: For every project run your program.
-//       Then copy and paste the output in a file titled RUN under resources folder. 
-
+Hello. My name is Marian Zlateva
