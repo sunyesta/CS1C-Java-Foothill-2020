@@ -1,6 +1,6 @@
 /**
  * Simple class to test submitting to GitHub repository.
- * @author Foothill College, Bita M
+ * @author Foothill College, Marian Zlateva
  *
  * Note: If you modified this file then update the author name with your: Marian Zlateva
  * 
