@@ -1,0 +1,13 @@
+FEEDBACK:
+
+Congratulations on your first submission!
+
+-0 Do not include the file ".iml" which is an IntelliJ specific configuration file.
+
+
+-0.5 missing .gitignore file. Result is your binary folder "out" is being committed to repository. 
+	See modules on .gitignore and github tutorial. 
+	Next time minus one for this.
+	
+-Bita.
+
