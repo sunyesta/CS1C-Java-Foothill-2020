@@ -1,0 +1,13 @@
+buy tomato
+buy meat
+buy soup
+buy spaghetti
+buy linguine
+buy onion
+buy cereal
+buy milk
+buy milk
+buy bread
+buy juice
+buy pie
+buy chicken

@@ -1,0 +1,5 @@
+The curves for each graph each follow a trend where they dip down and reach their lowest points around when the recursion limit is 50 and then go up.
+The bumps in the graph are most likely due to my computer processing external things which makes sence because computers are always processing things in the background
+whether we know it or not.
+To limit this, I tried turning on airplane mode and not using my laptop while it ran its computations.
+Because the lowest trend point for time in each of the curves is around 50, I would say that the most optimal recursion limit of quick sort is around 50.

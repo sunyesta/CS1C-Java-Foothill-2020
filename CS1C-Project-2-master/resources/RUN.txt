@@ -1,0 +1,258 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: src/subsetsum/ShoppingBag.java
+budget: 2000
+
+NOTES: Testing target budget > sum of all elements.
+-----------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+2000
+final: 58.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 3 ms : 774500 ns
+Purchased grocery prices are:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+Done with ShoppingBag.
+
+Process finished with exit code 0
+
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: src/subsetsum/ShoppingBag.java
+budget: 17.5
+
+NOTES: Testing set of elements found with sums
+       to exactly to target budget.
+---------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+58
+final: 58.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 3 ms : 666500 ns
+Purchased grocery prices are:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+Done with ShoppingBag.
+
+Process finished with exit code 0
+
+
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: src/subsetsum/ShoppingBag.java
+budget: 20
+
+NOTES: Testing target budget returning closest match.
+---------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+20
+final: 20.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 612100 ns
+Purchased grocery prices are:
+[2.5, 11.5, 6.0]
+Done with ShoppingBag.
+
+Process finished with exit code 0
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: src/subsetsum/ShoppingBag.java
+budget: 12.23
+
+NOTES: Testing target budget returning closest match.
+---------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+12.23
+final: 12.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 2 ms : 72700 ns
+Purchased grocery prices are:
+[4.0, 8.0]
+Done with ShoppingBag.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: src/subsetsum/ShoppingBag.java
+budget: 30.2
+
+NOTES: Testing target budget returning closest match.
+---------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+30.2
+final: 29.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 2 ms : 158500 ns
+Purchased grocery prices are:
+[2.5, 11.5, 15.0]
+Done with ShoppingBag.
+
+Process finished with exit code 0
+
+
+
+---------------------------------------------------
+---------------------------------------------------
+
+
+Test file: src/subsetsum/FoothillTunesStore.java
+duration: 100.3
+
+NOTES: Testing target duration returning closest match.
+---------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list:
+100.3
+final: 100.3
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 21 ms : 87600 ns
+Songs in play list:
+[Mes Dames Sarat, 0:4:7, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Dance The Night Away, 0:2:39, Blue Oyster Cult, classic pop and rock
+, Debbie Denise, 0:4:11, Blue Oyster Cult, classic pop and rock
+, (Don't Fear) The Reaper, 0:5:8, Blue Oyster Cult, classic pop and rock
+, Morning Final, 0:4:15, Blue Oyster Cult, classic pop and rock
+, The Revenge Of Vera Gemini, 0:3:51, Blue Oyster Cult, classic pop and rock
+, True Confessions, 0:2:58, Blue Oyster Cult, classic pop and rock
+, Out Of Stadion - Original, 0:1:22, Blue Oyster Cult, classic pop and rock
+, Ginger Snaps - Original, 0:1:35, Blue Oyster Cult, classic pop and rock
+, Demon's Kiss - Original, 0:3:53, Blue Oyster Cult, classic pop and rock
+, Remodeling - Original, 0:2:14, Blue Oyster Cult, classic pop and rock
+, Spray That Scumbag - Original, 0:1:44, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Redeemed, 0:3:52, Blue Oyster Cult, classic pop and rock
+, Workshop Of The Telescopes, 0:4:2, Blue Oyster Cult, classic pop and rock
+, What Is Quicksand, 0:3:41, Blue Oyster Cult, classic pop and rock
+, Dominenance And Submission, 0:5:50, Blue Oyster Cult, classic pop and rock
+, Godzilla, 0:7:50, Blue Oyster Cult, classic pop and rock
+, E.T.I. (Extra Terrestrial Intelligence), 0:3:47, Blue Oyster Cult, classic pop and rock
+, Don't Fear The Reaper, 0:6:5, Blue Oyster Cult, classic pop and rock
+, Me 262, 0:8:9, Blue Oyster Cult, classic pop and rock
+, I Love The Night, 0:4:30, Blue Oyster Cult, classic pop and rock
+, The Red & The Black, 0:4:29, Blue Oyster Cult, classic pop and rock
+, Mirrors, 0:3:46, Blue Oyster Cult, classic pop and rock
+]
+Done with FoothillTunesStore.
+
+Process finished with exit code 0
+
+
+
+---------------------------------------------------
+---------------------------------------------------
+
+
+Test file: src/subsetsum/FoothillTunesStore.java
+duration: 50.23
+
+NOTES: Testing target duration returning closest match.
+---------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list:
+50.23
+final: 50.1
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 2 sec : 673 ms : 19000 ns
+Songs in play list:
+[Mes Dames Sarat, 0:4:7, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Dance The Night Away, 0:2:39, Blue Oyster Cult, classic pop and rock
+, Debbie Denise, 0:4:11, Blue Oyster Cult, classic pop and rock
+, (Don't Fear) The Reaper, 0:5:8, Blue Oyster Cult, classic pop and rock
+, Morning Final, 0:4:15, Blue Oyster Cult, classic pop and rock
+, The Revenge Of Vera Gemini, 0:3:51, Blue Oyster Cult, classic pop and rock
+, True Confessions, 0:2:58, Blue Oyster Cult, classic pop and rock
+, Out Of Stadion - Original, 0:1:22, Blue Oyster Cult, classic pop and rock
+, Ginger Snaps - Original, 0:1:35, Blue Oyster Cult, classic pop and rock
+, Demon's Kiss - Original, 0:3:53, Blue Oyster Cult, classic pop and rock
+, Remodeling - Original, 0:2:14, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Redeemed, 0:3:52, Blue Oyster Cult, classic pop and rock
+, What Is Quicksand, 0:3:41, Blue Oyster Cult, classic pop and rock
+]
+Done with FoothillTunesStore.
+
+Process finished with exit code 0
+
+
+---------------------------------------------------
+---------------------------------------------------
+
+
+Test file: src/subsetsum/FoothillTunesStore.java
+duration: 12.4
+
+NOTES: Testing target duration returning closest match.
+---------------------------------------------------
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list:
+12.4
+final: 12.4
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 12 ms : 442300 ns
+Songs in play list:
+[Mes Dames Sarat, 0:4:7, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Dance The Night Away, 0:2:39, Blue Oyster Cult, classic pop and rock
+, Song of Sorn, 0:2:28, Deerhoof, classic pop and rock
+]
+Done with FoothillTunesStore.
+
+
+
+---------------------------------------------------
+---------------------------------------------------
+
+
+Test file: src/subsetsum/FoothillTunesStore.java
+duration: 100000000000000000000000000000000
+
+NOTES: Testing target duration returning an empty set because the input is too large
+---------------------------------------------------
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list:
+100000000000000000000000000000000
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 18 ms : 883900 ns
+Songs in play list:
+[]
+Done with FoothillTunesStore.
+
+Process finished with exit code 0

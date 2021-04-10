@@ -1,0 +1,26 @@
+FEEDBACK:
+
+Excellent implementation of the findSubset() method.
+
+
++0.5 Excellent implementation of computeSubset() in class SubsetSum incorporating generics
+     to work with both inputs.
+     
+
++0.5 Excellent documentation of your source code.
+
+
+Very good descriptive README.
+
+     
+Extra Credit Opportunity:
++1 implementation of findSubset() for SongEntry type.
+   How does your implementation improve about the Part 1? The challenge for
+   this part was to experiment with being able to handle larger sets.
+
++1 clearly defined test cases for findSubset() method.   
+
++1 Successfully finds subset.
+
+-Bita.
+

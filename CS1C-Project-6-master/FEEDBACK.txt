@@ -1,0 +1,34 @@
+FEEDBACK:
+
+Very good garbage collection of your LazySearchTree class. You are very close.
+   See suggestion below.
+   
+   
+Good submission of additional test cases.
+
+   
+-0.5 Incomplete implementation of collectGarbage does not correctly set the root of
+     the tree after calling removeHard. Make sure to set the root in public facing
+     collectGarbage() method:
+        mRoot = collectGarbage(mRoot);
+     See sample output below.
+
+-Bita.
+
+
+sample output 1:
+...
+
+at line #7: buy cabbage
+calling garbage collection...  <----------------
+
+inventory after garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+bread:0  butter:1  
+
+Testing traversing "soft" inventory:
+butter:1  
+

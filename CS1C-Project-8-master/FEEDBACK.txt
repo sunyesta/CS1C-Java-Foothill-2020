@@ -1,0 +1,20 @@
+FEEDBACK:
+
+Overall, well done this quarter!
+
+ 
+Excellent description of findings.
+	Yes, the oscillation/bumps of run times is most likely due to background applications, 
+	processes etc. For example, a spike could be due to GC running in the background. 
+	Creative approach in switching to "airplane mode" to try to reduce background applicaitons!
+	
+	Perhaps a Java profiler (such as JProfiler) would help solve the mystery. 
+
+
+Good annotation of your graphs.
+
+
+Very good documentation of your implementation.
+
+-Bita.
+

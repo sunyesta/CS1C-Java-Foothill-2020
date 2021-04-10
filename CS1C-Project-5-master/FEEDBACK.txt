@@ -1,0 +1,17 @@
+FEEDBACK:
+
+Nice clean implementation of your LazySearchTree class with lazy deletion!
+
+
+Good documentation of your implementation.
+
+
+Extra Credit:
++1 Good testing of lazy removal in FoothillTuneStore.
+   For future, a broader range of test cases. For example, randomize
+   the size of the tree.
+   
++2 Excellent testing of findMin() and findMax() in class FoothillTuneStore.
+
+-Bita.
+

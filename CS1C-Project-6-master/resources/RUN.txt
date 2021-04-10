@@ -1,0 +1,4153 @@
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_log.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: testing adding and removing from the lazy search tree
+---------------------------------------------------
+
+Test file: resources/inventory_log.txt
+Garbage collection threshold = 4
+
+
+Update at line #1: add milk
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+milk:1
+
+Testing traversing "soft" inventory:
+milk:1
+
+
+at line #1: add milk
+First item: milk:1
+Last item: milk:1
+
+
+Update at line #2: add milk
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+milk:2
+
+Testing traversing "soft" inventory:
+milk:2
+
+
+at line #2: add milk
+First item: milk:2
+Last item: milk:2
+
+
+Update at line #3: add soup
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+milk:2  soup:1
+
+Testing traversing "soft" inventory:
+milk:2  soup:1
+
+
+at line #3: add soup
+First item: milk:2
+Last item: soup:1
+
+
+Update at line #4: add soup
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+milk:2  soup:2
+
+Testing traversing "soft" inventory:
+milk:2  soup:2
+
+
+at line #4: add soup
+First item: milk:2
+Last item: soup:2
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:1  milk:2  soup:2
+
+Testing traversing "soft" inventory:
+apples:1  milk:2  soup:2
+
+
+at line #5: add apples
+First item: apples:1
+Last item: soup:2
+
+
+Update at line #6: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+apples:1  milk:2  soup:2  tomato:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:2  soup:2  tomato:1
+
+
+at line #6: add tomato
+First item: apples:1
+Last item: tomato:1
+
+
+Update at line #7: add eggplant
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  eggplant:1  milk:2  soup:2  tomato:1
+
+Testing traversing "soft" inventory:
+apples:1  eggplant:1  milk:2  soup:2  tomato:1
+
+
+at line #7: add eggplant
+First item: apples:1
+Last item: tomato:1
+
+
+Update at line #8: add avocado
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:1
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:1
+
+
+at line #8: add avocado
+First item: apples:1
+Last item: tomato:1
+
+
+Update at line #9: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:2
+
+
+at line #9: add tomato
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #10: add onion
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #10: add onion
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #11: add beans
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  beans:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  beans:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #11: add beans
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #12: add beans
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #12: add beans
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #13: buy apples
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #13: buy apples
+First item: avocado:1
+Last item: tomato:2
+
+Warning: Unable to fulfill request: at line #14: buy fish
+Warning: Item fish is out of stock.
+
+at line #14: buy fish
+First item: avocado:1
+Last item: tomato:2
+
+
+Update at line #15: add pie
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:2
+
+
+at line #15: add pie
+First item: avocado:1
+Last item: tomato:2
+
+
+Update at line #16: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #16: add tomato
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #17: add cake
+"hard" number of unique items (i.e. mSizeHard) = 10
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #17: add cake
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #18: add fish
+"hard" number of unique items (i.e. mSizeHard) = 11
+"soft" number of unique items (i.e. mSize) = 10
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #18: add fish
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #19: add chicken
+"hard" number of unique items (i.e. mSizeHard) = 12
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #19: add chicken
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #20: add cereal
+"hard" number of unique items (i.e. mSizeHard) = 13
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #20: add cereal
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #21: add cookies
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #21: add cookies
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #22: buy onion
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:0  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  pie:1  soup:2  tomato:3
+
+
+at line #22: buy onion
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #23: buy pie
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #23: buy pie
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #24: buy cookies
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 10
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #24: buy cookies
+First item: avocado:1
+Last item: tomato:3
+
+at line #24: buy cookies
+calling garbage collection...
+
+inventory after garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 10
+"soft" number of unique items (i.e. mSize) = 10
+
+Testing traversing "hard" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+
+Update at line #25: add apples
+"hard" number of unique items (i.e. mSizeHard) = 11
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #25: add apples
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #26: add basil
+"hard" number of unique items (i.e. mSizeHard) = 12
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #26: add basil
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #27: add juice
+"hard" number of unique items (i.e. mSizeHard) = 13
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:1  milk:2  soup:2  tomato:3
+
+
+at line #27: add juice
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #28: add juice
+"hard" number of unique items (i.e. mSizeHard) = 13
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  milk:2  soup:2  tomato:3
+
+
+at line #28: add juice
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #29: add bread
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  milk:2  soup:2  tomato:3
+
+
+at line #29: add bread
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #30: add meat
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+
+at line #30: add meat
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #31: add eggplant
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+
+at line #31: add eggplant
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #32: add bread
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+
+at line #32: add bread
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #33: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:4
+
+
+at line #33: add tomato
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #34: buy meat
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:0  milk:2  soup:2  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:2  tomato:4
+
+
+at line #34: buy meat
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #35: add soup
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:0  milk:2  soup:3  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:3  tomato:4
+
+
+at line #35: add soup
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #36: add spaghetti
+"hard" number of unique items (i.e. mSizeHard) = 16
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:0  milk:2  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:3  spaghetti:1  tomato:4
+
+
+at line #36: add spaghetti
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #37: add linguine
+"hard" number of unique items (i.e. mSizeHard) = 17
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  soup:3  spaghetti:1  tomato:4
+
+
+at line #37: add linguine
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #38: add onion
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #38: add onion
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #39: add cereal
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #39: add cereal
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #40: add milk
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:3  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:3  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #40: add milk
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #41: buy milk
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #41: buy milk
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #42: buy bread
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #42: buy bread
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #43: buy juice
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:1  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #43: buy juice
+First item: apples:1
+Last item: tomato:4
+
+Warning: Unable to fulfill request: at line #44: buy pie
+Warning: Item pie is out of stock.
+
+at line #44: buy pie
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #45: buy chicken
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:0  eggplant:2  fish:1  juice:1  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #45: buy chicken
+First item: apples:1
+Last item: tomato:4
+
+
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:0  eggplant:2  fish:1  juice:1  linguine:1  meat:0  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 16
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+Done with SuperMarket.
+
+Process finished with exit code 0
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_short.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: shorter testing adding and removing from the lazy search tree
+---------------------------------------------------
+
+Test file: resources/inventory_short.txt
+Garbage collection threshold = 4
+
+
+Update at line #1: add soup
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+soup:1
+
+Testing traversing "soft" inventory:
+soup:1
+
+
+at line #1: add soup
+First item: soup:1
+Last item: soup:1
+
+
+Update at line #2: add tangerines
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1
+
+
+at line #2: add tangerines
+First item: soup:1
+Last item: tangerines:1
+
+
+Update at line #3: add turnips
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  turnips:1
+
+
+at line #3: add turnips
+First item: soup:1
+Last item: turnips:1
+
+
+Update at line #4: add milk
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #4: add milk
+First item: milk:1
+Last item: turnips:1
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #5: add apples
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #6: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #6: add apples
+First item: apples:2
+Last item: turnips:1
+
+
+Update at line #7: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #7: add apples
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #8: add bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #8: add bread
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #9: buy soup
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  tangerines:1  turnips:1
+
+
+at line #9: buy soup
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #10: buy milk
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  tangerines:1  turnips:1
+
+
+at line #10: buy milk
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #11: buy bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:3  bread:0  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  tangerines:1  turnips:1
+
+
+at line #11: buy bread
+First item: apples:3
+Last item: turnips:1
+
+
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:3  bread:0  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  tangerines:1  turnips:1
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:3  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  tangerines:1  turnips:1
+
+
+Done with SuperMarket.
+
+Process finished with exit code 0
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_invalid_removal.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: showing an Item with a count of 1 in the inventory and the user's request to buy the item twice
+---------------------------------------------------
+
+Test file: resources/inventory_invalid_removal.txt
+Garbage collection threshold = 4
+
+
+Update at line #1: add soup
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+soup:1
+
+Testing traversing "soft" inventory:
+soup:1
+
+
+at line #1: add soup
+First item: soup:1
+Last item: soup:1
+
+
+Update at line #2: add tangerines
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1
+
+
+at line #2: add tangerines
+First item: soup:1
+Last item: tangerines:1
+
+
+Update at line #3: add turnips
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  turnips:1
+
+
+at line #3: add turnips
+First item: soup:1
+Last item: turnips:1
+
+
+Update at line #4: add milk
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #4: add milk
+First item: milk:1
+Last item: turnips:1
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #5: add apples
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #6: add bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #6: add bread
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #7: buy soup
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  tangerines:1  turnips:1
+
+
+at line #7: buy soup
+First item: apples:1
+Last item: turnips:1
+
+Warning: Unable to fulfill request: at line #8: buy soup
+Warning: Item soup is out of stock.
+
+at line #8: buy soup
+First item: apples:1
+Last item: turnips:1
+
+
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  tangerines:1  turnips:1
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  tangerines:1  turnips:1
+
+
+Done with SuperMarket.
+
+Process finished with exit code 0
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_invalid_removal.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: testing a very large inventory
+---------------------------------------------------
+
+Test file: resources/inventory_random_size.txt
+Garbage collection threshold = 4
+
+
+Update at line #1: add soup
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+soup:1
+
+Testing traversing "soft" inventory:
+soup:1
+
+
+at line #1: add soup
+First item: soup:1
+Last item: soup:1
+
+
+Update at line #2: add tangerines
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1
+
+
+at line #2: add tangerines
+First item: soup:1
+Last item: tangerines:1
+
+
+Update at line #3: add turnips
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  turnips:1
+
+
+at line #3: add turnips
+First item: soup:1
+Last item: turnips:1
+
+
+Update at line #4: add milk
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #4: add milk
+First item: milk:1
+Last item: turnips:1
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #5: add apples
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #6: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #6: add apples
+First item: apples:2
+Last item: turnips:1
+
+
+Update at line #7: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #7: add apples
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #8: add bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #8: add bread
+First item: apples:3
+Last item: turnips:1
+
+Warning: Unable to fulfill request: at line #9: buy food
+Warning: Item food is out of stock.
+
+at line #9: buy food
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #10: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #10: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #11: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:2  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:2  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #11: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #12: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:3  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:3  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #12: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #13: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:4  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:4  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #13: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #14: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:5  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:5  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #14: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #15: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:6  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:6  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #15: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #16: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:7  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:7  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #16: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #17: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:8  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:8  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #17: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #18: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:9  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:9  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #18: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #19: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:10  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:10  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #19: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #20: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:11  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:11  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #20: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #21: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:12  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:12  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #21: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #22: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:13  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:13  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #22: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #23: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:14  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:14  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #23: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #24: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:15  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:15  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #24: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #25: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:16  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:16  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #25: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #26: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:17  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:17  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #26: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #27: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:18  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:18  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #27: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #28: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:19  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:19  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #28: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #29: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:20  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:20  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #29: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #30: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:21  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:21  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #30: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #31: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:22  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:22  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #31: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #32: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:23  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:23  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #32: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #33: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:24  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:24  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #33: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #34: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:25  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:25  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #34: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #35: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:26  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:26  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #35: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #36: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:27  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:27  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #36: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #37: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:28  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:28  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #37: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #38: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:29  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:29  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #38: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #39: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:30  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:30  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #39: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #40: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:31  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:31  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #40: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #41: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:32  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:32  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #41: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #42: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:33  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:33  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #42: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #43: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:34  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:34  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #43: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #44: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:35  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:35  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #44: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #45: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:36  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:36  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #45: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #46: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:37  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:37  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #46: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #47: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:38  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:38  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #47: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #48: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:39  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:39  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #48: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #49: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:40  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:40  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #49: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #50: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:41  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:41  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #50: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #51: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:42  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:42  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #51: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #52: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:43  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:43  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #52: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #53: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:44  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:44  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #53: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #54: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:45  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:45  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #54: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #55: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:46  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:46  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #55: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #56: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:47  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:47  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #56: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #57: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:48  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:48  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #57: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #58: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:49  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:49  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #58: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #59: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:50  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:50  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #59: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #60: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:51  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:51  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #60: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #61: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:52  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:52  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #61: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #62: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:53  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:53  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #62: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #63: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:54  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:54  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #63: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #64: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:55  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:55  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #64: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #65: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:56  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:56  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #65: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #66: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:57  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:57  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #66: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #67: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:58  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:58  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #67: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #68: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:59  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:59  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #68: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #69: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:60  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:60  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #69: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #70: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:61  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:61  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #70: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #71: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:62  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:62  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #71: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #72: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:63  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:63  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #72: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #73: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:64  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:64  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #73: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #74: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:65  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:65  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #74: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #75: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:66  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:66  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #75: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #76: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:67  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:67  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #76: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #77: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:68  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:68  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #77: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #78: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:69  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:69  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #78: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #79: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:70  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:70  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #79: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #80: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:71  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:71  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #80: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #81: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:72  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:72  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #81: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #82: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:73  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:73  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #82: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #83: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:74  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:74  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #83: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #84: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:75  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:75  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #84: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #85: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:76  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:76  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #85: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #86: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:77  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:77  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #86: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #87: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:78  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:78  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #87: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #88: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:79  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:79  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #88: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #89: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:80  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:80  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #89: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #90: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:81  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:81  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #90: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #91: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:82  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:82  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #91: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #92: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:83  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:83  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #92: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #93: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:84  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:84  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #93: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #94: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:85  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:85  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #94: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #95: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:86  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:86  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #95: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #96: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:87  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:87  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #96: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #97: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:88  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:88  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #97: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #98: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:89  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:89  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #98: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #99: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:90  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:90  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #99: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #100: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:91  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:91  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #100: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #101: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:92  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:92  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #101: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #102: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:93  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:93  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #102: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #103: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:94  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:94  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #103: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #104: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:95  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:95  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #104: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #105: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:96  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:96  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #105: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #106: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:97  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:97  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #106: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #107: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:98  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:98  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #107: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #108: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:99  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:99  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #108: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #109: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:100  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:100  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #109: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #110: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:101  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:101  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #110: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #111: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:102  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:102  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #111: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #112: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:103  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:103  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #112: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #113: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:104  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:104  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #113: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #114: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:105  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:105  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #114: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #115: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:106  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:106  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #115: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #116: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:107  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:107  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #116: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #117: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:108  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:108  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #117: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #118: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:109  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:109  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #118: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #119: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:110  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:110  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #119: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #120: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:111  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:111  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #120: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #121: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:112  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:112  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #121: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #122: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:113  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:113  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #122: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #123: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:114  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:114  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #123: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #124: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:115  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:115  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #124: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #125: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:116  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:116  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #125: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #126: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:117  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:117  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #126: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #127: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:118  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:118  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #127: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #128: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:119  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:119  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #128: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #129: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:120  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:120  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #129: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #130: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:121  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:121  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #130: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #131: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:122  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:122  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #131: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #132: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:123  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:123  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #132: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #133: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:124  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:124  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #133: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #134: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:125  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:125  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #134: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #135: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:126  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:126  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #135: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #136: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:127  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:127  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #136: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #137: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:128  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:128  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #137: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #138: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:129  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:129  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #138: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #139: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:130  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:130  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #139: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #140: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:131  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:131  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #140: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #141: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:132  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:132  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #141: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #142: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:133  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:133  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #142: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #143: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:134  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:134  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #143: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #144: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:135  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:135  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #144: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #145: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:136  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:136  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #145: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #146: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:137  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:137  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #146: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #147: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:138  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:138  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #147: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #148: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:139  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:139  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #148: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #149: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:140  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:140  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #149: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #150: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:141  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:141  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #150: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #151: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:142  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:142  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #151: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #152: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:143  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:143  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #152: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #153: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:144  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:144  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #153: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #154: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:145  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:145  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #154: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #155: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:146  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:146  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #155: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #156: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:147  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:147  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #156: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #157: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:148  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:148  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #157: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #158: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:149  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:149  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #158: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #159: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:150  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:150  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #159: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #160: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:151  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:151  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #160: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #161: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:152  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:152  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #161: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #162: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:153  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:153  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #162: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #163: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:154  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:154  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #163: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #164: add clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:155  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:155  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #164: add clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #165: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:154  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:154  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #165: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #166: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:153  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:153  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #166: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #167: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:152  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:152  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #167: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #168: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:151  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:151  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #168: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #169: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:150  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:150  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #169: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #170: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:149  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:149  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #170: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #171: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  clapper:148  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  clapper:148  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #171: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+Warning: Unable to fulfill request: at line #172: buy hair extensions
+Warning: Item hair is out of stock.
+
+at line #172: buy hair extensions
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #173: add cake
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:148  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:148  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #173: add cake
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #174: add love
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:148  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:148  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #174: add love
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #175: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:147  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:147  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #175: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #176: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:146  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:146  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #176: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #177: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:145  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:145  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #177: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #178: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:144  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:144  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #178: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #179: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:143  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:143  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #179: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #180: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:142  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:142  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #180: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #181: buy clapper
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  love:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #181: buy clapper
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #182: add milk
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  love:1  milk:2  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  love:1  milk:2  soup:1  tangerines:1  turnips:1
+
+
+at line #182: add milk
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #183: add dvd
+"hard" number of unique items (i.e. mSizeHard) = 10
+"soft" number of unique items (i.e. mSize) = 10
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  love:1  milk:2  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  love:1  milk:2  soup:1  tangerines:1  turnips:1
+
+
+at line #183: add dvd
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #184: add money
+"hard" number of unique items (i.e. mSizeHard) = 11
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  love:1  milk:2  money:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  love:1  milk:2  money:1  soup:1  tangerines:1  turnips:1
+
+
+at line #184: add money
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #185: add raccoon
+"hard" number of unique items (i.e. mSizeHard) = 12
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  love:1  milk:2  money:1  raccoon:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  love:1  milk:2  money:1  raccoon:1  soup:1  tangerines:1  turnips:1
+
+
+at line #185: add raccoon
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #186: add frisbee
+"hard" number of unique items (i.e. mSizeHard) = 13
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  love:1  milk:2  money:1  raccoon:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  love:1  milk:2  money:1  raccoon:1  soup:1  tangerines:1  turnips:1
+
+
+at line #186: add frisbee
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #187: add husband
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:1  raccoon:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:1  raccoon:1  soup:1  tangerines:1  turnips:1
+
+
+at line #187: add husband
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #188: add money
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:2  raccoon:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:2  raccoon:1  soup:1  tangerines:1  turnips:1
+
+
+at line #188: add money
+First item: apples:3
+Last item: turnips:1
+
+
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:2  raccoon:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:2  raccoon:1  soup:1  tangerines:1  turnips:1
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:2  raccoon:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  cake:1  clapper:141  dvd:1  frisbee:1  husband:1  love:1  milk:2  money:2  raccoon:1  soup:1  tangerines:1  turnips:1
+
+
+Done with SuperMarket.
+
+Process finished with exit code 0

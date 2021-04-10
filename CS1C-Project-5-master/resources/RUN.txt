@@ -1,0 +1,2690 @@
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_log.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: testing adding and removing from the lazy search tree
+---------------------------------------------------
+Test file: resources/inventory_log.txt
+
+
+Update at line #1: add milk
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+milk:1
+
+Testing traversing "soft" inventory:
+milk:1
+
+
+at line #1: add milk
+First item: milk:1
+Last item: milk:1
+
+
+Update at line #2: add milk
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+milk:2
+
+Testing traversing "soft" inventory:
+milk:2
+
+
+at line #2: add milk
+First item: milk:2
+Last item: milk:2
+
+
+Update at line #3: add soup
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+milk:2  soup:1
+
+Testing traversing "soft" inventory:
+milk:2  soup:1
+
+
+at line #3: add soup
+First item: milk:2
+Last item: soup:1
+
+
+Update at line #4: add soup
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+milk:2  soup:2
+
+Testing traversing "soft" inventory:
+milk:2  soup:2
+
+
+at line #4: add soup
+First item: milk:2
+Last item: soup:2
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:1  milk:2  soup:2
+
+Testing traversing "soft" inventory:
+apples:1  milk:2  soup:2
+
+
+at line #5: add apples
+First item: apples:1
+Last item: soup:2
+
+
+Update at line #6: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+apples:1  milk:2  soup:2  tomato:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:2  soup:2  tomato:1
+
+
+at line #6: add tomato
+First item: apples:1
+Last item: tomato:1
+
+
+Update at line #7: add avocado
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  milk:2  soup:2  tomato:1
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  milk:2  soup:2  tomato:1
+
+
+at line #7: add avocado
+First item: apples:1
+Last item: tomato:1
+
+
+Update at line #8: add eggplant
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:1
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:1
+
+
+at line #8: add eggplant
+First item: apples:1
+Last item: tomato:1
+
+
+Update at line #9: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  soup:2  tomato:2
+
+
+at line #9: add tomato
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #10: add onion
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #10: add onion
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #11: add beans
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  beans:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  beans:1  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #11: add beans
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #12: add beans
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #12: add beans
+First item: apples:1
+Last item: tomato:2
+
+
+Update at line #13: buy apples
+"hard" number of unique items (i.e. mSizeHard) = 8
+"soft" number of unique items (i.e. mSize) = 7
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  eggplant:1  milk:2  onion:1  soup:2  tomato:2
+
+
+at line #13: buy apples
+First item: avocado:1
+Last item: tomato:2
+
+Warning: Unable to fulfill request: at line #14: buy fish
+Warning: Item fish is out of stock.
+
+at line #14: buy fish
+First item: avocado:1
+Last item: tomato:2
+
+
+Update at line #15: add pie
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:2
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:2
+
+
+at line #15: add pie
+First item: avocado:1
+Last item: tomato:2
+
+
+Update at line #16: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 9
+"soft" number of unique items (i.e. mSize) = 8
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #16: add tomato
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #17: add cake
+"hard" number of unique items (i.e. mSizeHard) = 10
+"soft" number of unique items (i.e. mSize) = 9
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  eggplant:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #17: add cake
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #18: add fish
+"hard" number of unique items (i.e. mSizeHard) = 11
+"soft" number of unique items (i.e. mSize) = 10
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #18: add fish
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #19: add chicken
+"hard" number of unique items (i.e. mSizeHard) = 12
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #19: add chicken
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #20: add cereal
+"hard" number of unique items (i.e. mSizeHard) = 13
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #20: add cereal
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #21: add cookies
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:1  pie:1  soup:2  tomato:3
+
+
+at line #21: add cookies
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #22: buy onion
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:0  pie:1  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  pie:1  soup:2  tomato:3
+
+
+at line #22: buy onion
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #23: buy pie
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #23: buy pie
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #24: buy cookies
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 10
+
+Testing traversing "hard" inventory:
+apples:0  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #24: buy cookies
+First item: avocado:1
+Last item: tomato:3
+
+
+Update at line #25: add apples
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 11
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  beans:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #25: add apples
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #26: add basil
+"hard" number of unique items (i.e. mSizeHard) = 15
+"soft" number of unique items (i.e. mSize) = 12
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  milk:2  soup:2  tomato:3
+
+
+at line #26: add basil
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #27: add juice
+"hard" number of unique items (i.e. mSizeHard) = 16
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  juice:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:1  milk:2  soup:2  tomato:3
+
+
+at line #27: add juice
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #28: add juice
+"hard" number of unique items (i.e. mSizeHard) = 16
+"soft" number of unique items (i.e. mSize) = 13
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  juice:2  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  milk:2  soup:2  tomato:3
+
+
+at line #28: add juice
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #29: add bread
+"hard" number of unique items (i.e. mSizeHard) = 17
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  juice:2  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  milk:2  soup:2  tomato:3
+
+
+at line #29: add bread
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #30: add meat
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  cookies:0  eggplant:1  fish:1  juice:2  meat:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:1  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+
+at line #30: add meat
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #31: add eggplant
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  meat:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+
+at line #31: add eggplant
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #32: add bread
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  meat:1  milk:2  onion:0  pie:0  soup:2  tomato:3
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:3
+
+
+at line #32: add bread
+First item: apples:1
+Last item: tomato:3
+
+
+Update at line #33: add tomato
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  meat:1  milk:2  onion:0  pie:0  soup:2  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  meat:1  milk:2  soup:2  tomato:4
+
+
+at line #33: add tomato
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #34: buy meat
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  meat:0  milk:2  onion:0  pie:0  soup:2  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:2  tomato:4
+
+
+at line #34: buy meat
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #35: add soup
+"hard" number of unique items (i.e. mSizeHard) = 18
+"soft" number of unique items (i.e. mSize) = 14
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  meat:0  milk:2  onion:0  pie:0  soup:3  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:3  tomato:4
+
+
+at line #35: add soup
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #36: add spaghetti
+"hard" number of unique items (i.e. mSizeHard) = 19
+"soft" number of unique items (i.e. mSize) = 15
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  meat:0  milk:2  onion:0  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  milk:2  soup:3  spaghetti:1  tomato:4
+
+
+at line #36: add spaghetti
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #37: add linguine
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:0  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  soup:3  spaghetti:1  tomato:4
+
+
+at line #37: add linguine
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #38: add onion
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:1  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #38: add onion
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #39: add cereal
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #39: add cereal
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #40: add milk
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:3  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:3  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #40: add milk
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #41: buy milk
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:2  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #41: buy milk
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #42: buy bread
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  cookies:0  eggplant:2  fish:1  juice:2  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:2  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #42: buy bread
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #43: buy juice
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 17
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  cookies:0  eggplant:2  fish:1  juice:1  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:1  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #43: buy juice
+First item: apples:1
+Last item: tomato:4
+
+Warning: Unable to fulfill request: at line #44: buy pie
+Warning: Item pie is out of stock.
+
+at line #44: buy pie
+First item: apples:1
+Last item: tomato:4
+
+
+Update at line #45: buy chicken
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:0  cookies:0  eggplant:2  fish:1  juice:1  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+at line #45: buy chicken
+First item: apples:1
+Last item: tomato:4
+
+
+
+
+Final state of inventory:
+"hard" number of unique items (i.e. mSizeHard) = 20
+"soft" number of unique items (i.e. mSize) = 16
+
+Testing traversing "hard" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  chicken:0  cookies:0  eggplant:2  fish:1  juice:1  linguine:1  meat:0  milk:2  onion:1  pie:0  soup:3  spaghetti:1  tomato:4
+
+Testing traversing "soft" inventory:
+apples:1  avocado:1  basil:1  beans:2  bread:1  cake:1  cereal:2  eggplant:2  fish:1  juice:1  linguine:1  milk:2  onion:1  soup:3  spaghetti:1  tomato:4
+
+
+Done with SuperMarket.
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_short.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: shorter testing adding and removing from the lazy search tree
+---------------------------------------------------
+Test file: resources/inventory_short.txt
+
+
+Update at line #1: add soup
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+soup:1
+
+Testing traversing "soft" inventory:
+soup:1
+
+
+at line #1: add soup
+First item: soup:1
+Last item: soup:1
+
+
+Update at line #2: add tangerines
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1
+
+
+at line #2: add tangerines
+First item: soup:1
+Last item: tangerines:1
+
+
+Update at line #3: add turnips
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  turnips:1
+
+
+at line #3: add turnips
+First item: soup:1
+Last item: turnips:1
+
+
+Update at line #4: add milk
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #4: add milk
+First item: milk:1
+Last item: turnips:1
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #5: add apples
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #6: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:2  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #6: add apples
+First item: apples:2
+Last item: turnips:1
+
+
+Update at line #7: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #7: add apples
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #8: add bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #8: add bread
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #9: buy soup
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:1  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  milk:1  tangerines:1  turnips:1
+
+
+at line #9: buy soup
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #10: buy milk
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+apples:3  bread:1  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  bread:1  tangerines:1  turnips:1
+
+
+at line #10: buy milk
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #11: buy bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:3  bread:0  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:3  tangerines:1  turnips:1
+
+
+at line #11: buy bread
+First item: apples:3
+Last item: turnips:1
+
+
+Update at line #12: buy apples
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:2  bread:0  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:2  tangerines:1  turnips:1
+
+
+at line #12: buy apples
+First item: apples:2
+Last item: turnips:1
+
+
+
+
+Final state of inventory:
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+apples:2  bread:0  milk:0  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:2  tangerines:1  turnips:1
+
+
+Done with SuperMarket.
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_invalid_removal.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: showing an Item with a count of 1 in the inventory and the user's request to buy the item twice
+---------------------------------------------------
+Test file: resources/inventory_invalid_removal.txt
+
+
+Update at line #1: add soup
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+
+Testing traversing "hard" inventory:
+soup:1
+
+Testing traversing "soft" inventory:
+soup:1
+
+
+at line #1: add soup
+First item: soup:1
+Last item: soup:1
+
+
+Update at line #2: add tangerines
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1
+
+
+at line #2: add tangerines
+First item: soup:1
+Last item: tangerines:1
+
+
+Update at line #3: add turnips
+"hard" number of unique items (i.e. mSizeHard) = 3
+"soft" number of unique items (i.e. mSize) = 3
+
+Testing traversing "hard" inventory:
+soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+soup:1  tangerines:1  turnips:1
+
+
+at line #3: add turnips
+First item: soup:1
+Last item: turnips:1
+
+
+Update at line #4: add milk
+"hard" number of unique items (i.e. mSizeHard) = 4
+"soft" number of unique items (i.e. mSize) = 4
+
+Testing traversing "hard" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #4: add milk
+First item: milk:1
+Last item: turnips:1
+
+
+Update at line #5: add apples
+"hard" number of unique items (i.e. mSizeHard) = 5
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #5: add apples
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #6: add bread
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  soup:1  tangerines:1  turnips:1
+
+
+at line #6: add bread
+First item: apples:1
+Last item: turnips:1
+
+
+Update at line #7: buy soup
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  tangerines:1  turnips:1
+
+
+at line #7: buy soup
+First item: apples:1
+Last item: turnips:1
+
+Warning: Unable to fulfill request: at line #8: buy soup
+Warning: Item soup is out of stock.
+
+at line #8: buy soup
+First item: apples:1
+Last item: turnips:1
+
+
+
+
+Final state of inventory:
+"hard" number of unique items (i.e. mSizeHard) = 6
+"soft" number of unique items (i.e. mSize) = 5
+
+Testing traversing "hard" inventory:
+apples:1  bread:1  milk:1  soup:0  tangerines:1  turnips:1
+
+Testing traversing "soft" inventory:
+apples:1  bread:1  milk:1  tangerines:1  turnips:1
+
+
+Done with SuperMarket.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inventory_log_custom.txt
+Code file with main: src/lazyTrees/SuperMarket.java
+NOTES: only removing from the tree
+---------------------------------------------------
+Test file: resources/inventory_log_custom.txt
+
+Warning: Unable to fulfill request: at line #1: buy tomato
+Warning: Item tomato is out of stock.
+
+at line #1: buy tomato
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #2: buy meat
+Warning: Item meat is out of stock.
+
+at line #2: buy meat
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #3: buy soup
+Warning: Item soup is out of stock.
+
+at line #3: buy soup
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #4: buy spaghetti
+Warning: Item spaghetti is out of stock.
+
+at line #4: buy spaghetti
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #5: buy linguine
+Warning: Item linguine is out of stock.
+
+at line #5: buy linguine
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #6: buy onion
+Warning: Item onion is out of stock.
+
+at line #6: buy onion
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #7: buy cereal
+Warning: Item cereal is out of stock.
+
+at line #7: buy cereal
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #8: buy milk
+Warning: Item milk is out of stock.
+
+at line #8: buy milk
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #9: buy milk
+Warning: Item milk is out of stock.
+
+at line #9: buy milk
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #10: buy bread
+Warning: Item bread is out of stock.
+
+at line #10: buy bread
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #11: buy juice
+Warning: Item juice is out of stock.
+
+at line #11: buy juice
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #12: buy pie
+Warning: Item pie is out of stock.
+
+at line #12: buy pie
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+Warning: Unable to fulfill request: at line #13: buy chicken
+Warning: Item chicken is out of stock.
+
+at line #13: buy chicken
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+
+
+
+Final state of inventory:
+"hard" number of unique items (i.e. mSizeHard) = 0
+"soft" number of unique items (i.e. mSize) = 0
+
+Testing traversing "hard" inventory:
+
+
+Testing traversing "soft" inventory:
+
+
+
+Done with SuperMarket.
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/song_test.txt
+Code file with main: src/lazyTrees/FoothillTunesStore.java
+NOTES: testing adding and removing from the lazy search tree using SongEntries
+---------------------------------------------------
+Test file: resources/song_test.txt
+title: Solo
+
+
+Update at line #1: add Solo
+"hard" number of unique songs (i.e. mSizeHard) = 1
+"soft" number of unique songs (i.e. mSize) = 1
+
+Testing traversing "hard" tunes:
+Solo, Working Week, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Solo, Working Week, classic pop and rock
+
+
+
+at line #1: add Solo
+First song: Solo, Working Week, classic pop and rock
+Last song: Solo, Working Week, classic pop and rock
+title: Shadows - Original
+
+
+Update at line #2: add Shadows - Original
+"hard" number of unique songs (i.e. mSizeHard) = 2
+"soft" number of unique songs (i.e. mSize) = 2
+
+Testing traversing "hard" tunes:
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+
+
+
+at line #2: add Shadows - Original
+First song: Shadows - Original, Blue Oyster Cult, classic pop and rock
+Last song: Solo, Working Week, classic pop and rock
+title: Tom's Diner
+
+
+Update at line #3: add Tom's Diner
+"hard" number of unique songs (i.e. mSizeHard) = 3
+"soft" number of unique songs (i.e. mSize) = 3
+
+Testing traversing "hard" tunes:
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #3: add Tom's Diner
+First song: Shadows - Original, Blue Oyster Cult, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: Take Me Away
+
+
+Update at line #4: add Take Me Away
+"hard" number of unique songs (i.e. mSizeHard) = 4
+"soft" number of unique songs (i.e. mSize) = 4
+
+Testing traversing "hard" tunes:
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #4: add Take Me Away
+First song: Shadows - Original, Blue Oyster Cult, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: Here With Me
+
+
+Update at line #5: add Here With Me
+"hard" number of unique songs (i.e. mSizeHard) = 5
+"soft" number of unique songs (i.e. mSize) = 5
+
+Testing traversing "hard" tunes:
+Here With Me, Dido, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Here With Me, Dido, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #5: add Here With Me
+First song: Here With Me, Dido, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: Nuvole Bianche
+
+
+Update at line #6: add Nuvole Bianche
+"hard" number of unique songs (i.e. mSizeHard) = 6
+"soft" number of unique songs (i.e. mSize) = 6
+
+Testing traversing "hard" tunes:
+Here With Me, Dido, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Here With Me, Dido, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #6: add Nuvole Bianche
+First song: Here With Me, Dido, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: Luka
+
+
+Update at line #7: add Luka
+"hard" number of unique songs (i.e. mSizeHard) = 7
+"soft" number of unique songs (i.e. mSize) = 7
+
+Testing traversing "hard" tunes:
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #7: add Luka
+First song: Here With Me, Dido, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: Stoned
+
+
+Update at line #8: add Stoned
+"hard" number of unique songs (i.e. mSizeHard) = 8
+"soft" number of unique songs (i.e. mSize) = 8
+
+Testing traversing "hard" tunes:
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #8: add Stoned
+First song: Here With Me, Dido, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: Get Happy
+
+
+Update at line #9: add Get Happy
+"hard" number of unique songs (i.e. mSizeHard) = 9
+"soft" number of unique songs (i.e. mSize) = 9
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+
+
+
+at line #9: add Get Happy
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: Tom's Diner, Suzanne Vega, classic pop and rock
+title: We Belong
+
+
+Update at line #10: add We Belong
+"hard" number of unique songs (i.e. mSizeHard) = 10
+"soft" number of unique songs (i.e. mSize) = 10
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #10: add We Belong
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Let's Dance
+
+
+Update at line #11: add Let's Dance
+"hard" number of unique songs (i.e. mSizeHard) = 11
+"soft" number of unique songs (i.e. mSize) = 11
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #11: add Let's Dance
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Oh What a Feeling
+
+
+Update at line #12: add Oh What a Feeling
+"hard" number of unique songs (i.e. mSizeHard) = 12
+"soft" number of unique songs (i.e. mSize) = 12
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #12: add Oh What a Feeling
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Stairway To The Stars
+
+
+Update at line #13: add Stairway To The Stars
+"hard" number of unique songs (i.e. mSizeHard) = 13
+"soft" number of unique songs (i.e. mSize) = 13
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #13: add Stairway To The Stars
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Separate Ways (Worlds Apart)
+
+
+Update at line #14: add Separate Ways (Worlds Apart)
+"hard" number of unique songs (i.e. mSizeHard) = 14
+"soft" number of unique songs (i.e. mSize) = 14
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #14: add Separate Ways (Worlds Apart)
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Road Home
+
+
+Update at line #15: add Road Home
+"hard" number of unique songs (i.e. mSizeHard) = 15
+"soft" number of unique songs (i.e. mSize) = 15
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #15: add Road Home
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Traffic
+
+
+Update at line #16: add Traffic
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 16
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #16: add Traffic
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Solo
+
+
+Update at line #17: remove Solo
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 15
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #17: remove Solo
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Shadows - Original
+
+
+Update at line #18: remove Shadows - Original
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 14
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #18: remove Shadows - Original
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Tom's Diner
+
+
+Update at line #19: remove Tom's Diner
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 13
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #19: remove Tom's Diner
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Take Me Away
+
+
+Update at line #20: remove Take Me Away
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 12
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #20: remove Take Me Away
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Here With Me
+
+
+Update at line #21: remove Here With Me
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 11
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #21: remove Here With Me
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Nuvole Bianche
+
+
+Update at line #22: remove Nuvole Bianche
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 10
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #22: remove Nuvole Bianche
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Luka
+
+
+Update at line #23: remove Luka
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 9
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #23: remove Luka
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Stoned
+
+
+Update at line #24: remove Stoned
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 8
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #24: remove Stoned
+First song: Get Happy, Jean Knight, classic pop and rock
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: Get Happy
+
+
+Update at line #25: remove Get Happy
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 7
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Let's Dance, Jake Shimabukuro, folk
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+
+at line #25: remove Get Happy
+First song: Let's Dance, Jake Shimabukuro, folk
+Last song: We Belong, Pat Benatar, classic pop and rock
+title: We Belong
+
+
+Update at line #26: remove We Belong
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 6
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Let's Dance, Jake Shimabukuro, folk
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #26: remove We Belong
+First song: Let's Dance, Jake Shimabukuro, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Let's Dance
+
+
+Update at line #27: remove Let's Dance
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 5
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #27: remove Let's Dance
+First song: Oh What a Feeling, Gregory Isaac, classic pop and rock
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Oh What a Feeling
+
+
+Update at line #28: remove Oh What a Feeling
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 4
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #28: remove Oh What a Feeling
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Stairway To The Stars
+
+
+Update at line #29: remove Stairway To The Stars
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 3
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #29: remove Stairway To The Stars
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Separate Ways (Worlds Apart)
+
+
+Update at line #30: remove Separate Ways (Worlds Apart)
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 2
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Road Home, The String Cheese Incident, folk
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #30: remove Separate Ways (Worlds Apart)
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Road Home
+
+
+Update at line #31: remove Road Home
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 1
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #31: remove Road Home
+First song: Traffic, Dawn Landes, classic pop and rock
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Traffic
+
+
+Update at line #32: remove Traffic
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 0
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+
+
+
+at line #32: remove Traffic
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+
+
+
+Final state of tunes:
+"hard" number of unique songs (i.e. mSizeHard) = 16
+"soft" number of unique songs (i.e. mSize) = 0
+
+Testing traversing "hard" tunes:
+Get Happy, Jean Knight, classic pop and rock
+Here With Me, Dido, classic pop and rock
+Let's Dance, Jake Shimabukuro, folk
+Luka, Suzanne Vega, classic pop and rock
+Nuvole Bianche, Ludovico Einaudi, classical
+Oh What a Feeling, Gregory Isaac, classic pop and rock
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Shadows - Original, Blue Oyster Cult, classic pop and rock
+Solo, Working Week, classic pop and rock
+Stairway To The Stars, Blue Oyster Cult, classic pop and rock
+Stoned, Dido, classic pop and rock
+Take Me Away, Blue Oyster Cult, classic pop and rock
+Tom's Diner, Suzanne Vega, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+We Belong, Pat Benatar, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+
+
+
+Done with FoothillTunesStore.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/song_test2.txt
+Code file with main: src/lazyTrees/FoothillTunesStore.java
+NOTES: testing adding and removing songs with songs that aren't in the list anymore
+---------------------------------------------------
+Test file: resources/song_test2.txt
+title: Separate Ways (Worlds Apart)
+
+
+Update at line #1: add Separate Ways (Worlds Apart)
+"hard" number of unique songs (i.e. mSizeHard) = 1
+"soft" number of unique songs (i.e. mSize) = 1
+
+Testing traversing "hard" tunes:
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+
+
+
+at line #1: add Separate Ways (Worlds Apart)
+First song: Separate Ways (Worlds Apart), Journey, classic pop and rock
+Last song: Separate Ways (Worlds Apart), Journey, classic pop and rock
+title: Road Home
+
+
+Update at line #2: add Road Home
+"hard" number of unique songs (i.e. mSizeHard) = 2
+"soft" number of unique songs (i.e. mSize) = 2
+
+Testing traversing "hard" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+
+
+
+at line #2: add Road Home
+First song: Road Home, The String Cheese Incident, folk
+Last song: Separate Ways (Worlds Apart), Journey, classic pop and rock
+title: Traffic
+
+
+Update at line #3: add Traffic
+"hard" number of unique songs (i.e. mSizeHard) = 3
+"soft" number of unique songs (i.e. mSize) = 3
+
+Testing traversing "hard" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #3: add Traffic
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Solo
+
+Warning: Unable to fulfill request: at line #4: remove Solo
+Warning: song is not in the store.
+
+at line #4: remove Solo
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Shadows - Original
+
+Warning: Unable to fulfill request: at line #5: remove Shadows - Original
+Warning: song is not in the store.
+
+at line #5: remove Shadows - Original
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Tom's Diner
+
+Warning: Unable to fulfill request: at line #6: remove Tom's Diner
+Warning: song is not in the store.
+
+at line #6: remove Tom's Diner
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Take Me Away
+
+Warning: Unable to fulfill request: at line #7: remove Take Me Away
+Warning: song is not in the store.
+
+at line #7: remove Take Me Away
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Here With Me
+
+Warning: Unable to fulfill request: at line #8: remove Here With Me
+Warning: song is not in the store.
+
+at line #8: remove Here With Me
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Nuvole Bianche
+
+Warning: Unable to fulfill request: at line #9: remove Nuvole Bianche
+Warning: song is not in the store.
+
+at line #9: remove Nuvole Bianche
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Luka
+
+Warning: Unable to fulfill request: at line #10: remove Luka
+Warning: song is not in the store.
+
+at line #10: remove Luka
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Stoned
+
+Warning: Unable to fulfill request: at line #11: remove Stoned
+Warning: song is not in the store.
+
+at line #11: remove Stoned
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Get Happy
+
+Warning: Unable to fulfill request: at line #12: remove Get Happy
+Warning: song is not in the store.
+
+at line #12: remove Get Happy
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: We Belong
+
+Warning: Unable to fulfill request: at line #13: remove We Belong
+Warning: song is not in the store.
+
+at line #13: remove We Belong
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Let's Dance
+
+Warning: Unable to fulfill request: at line #14: remove Let's Dance
+Warning: song is not in the store.
+
+at line #14: remove Let's Dance
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Oh What a Feeling
+
+Warning: Unable to fulfill request: at line #15: remove Oh What a Feeling
+Warning: song is not in the store.
+
+at line #15: remove Oh What a Feeling
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Stairway To The Stars
+
+Warning: Unable to fulfill request: at line #16: remove Stairway To The Stars
+Warning: song is not in the store.
+
+at line #16: remove Stairway To The Stars
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Separate Ways (Worlds Apart)
+
+
+Update at line #17: remove Separate Ways (Worlds Apart)
+"hard" number of unique songs (i.e. mSizeHard) = 3
+"soft" number of unique songs (i.e. mSize) = 2
+
+Testing traversing "hard" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Road Home, The String Cheese Incident, folk
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #17: remove Separate Ways (Worlds Apart)
+First song: Road Home, The String Cheese Incident, folk
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Road Home
+
+
+Update at line #18: remove Road Home
+"hard" number of unique songs (i.e. mSizeHard) = 3
+"soft" number of unique songs (i.e. mSize) = 1
+
+Testing traversing "hard" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+Traffic, Dawn Landes, classic pop and rock
+
+
+
+at line #18: remove Road Home
+First song: Traffic, Dawn Landes, classic pop and rock
+Last song: Traffic, Dawn Landes, classic pop and rock
+title: Traffic
+
+
+Update at line #19: remove Traffic
+"hard" number of unique songs (i.e. mSizeHard) = 3
+"soft" number of unique songs (i.e. mSize) = 0
+
+Testing traversing "hard" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+
+
+
+at line #19: remove Traffic
+Warning: minimum element not found!
+Warning: maximum element not found!
+
+
+
+
+Final state of tunes:
+"hard" number of unique songs (i.e. mSizeHard) = 3
+"soft" number of unique songs (i.e. mSize) = 0
+
+Testing traversing "hard" tunes:
+Road Home, The String Cheese Incident, folk
+Separate Ways (Worlds Apart), Journey, classic pop and rock
+Traffic, Dawn Landes, classic pop and rock
+
+
+Testing traversing "soft" tunes:
+
+
+
+Done with FoothillTunesStore.

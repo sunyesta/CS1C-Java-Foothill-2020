@@ -1,0 +1,22 @@
+FEEDBACK:
+
+Well done simulating browser behavior via the Navigator class!
+
+
+Good implementation of class StackList. However, usage of iterator in
+   getNodeList() method which is within the same structure is unconventional.
+    
+    
+Good testing of Navigator class, especially in clarifying
+   the different test cases in your RUN.txt file.
+   
+   
+In pop() method check when user pops from an empty
+   stack. Consider either throwing an exception which the user has to
+   handle (Note: here the user is the Navigator class).
+
+
+Efficient implementation of clearing the stack!
+
+-Bita.
+
